@@ -1,0 +1,33 @@
+def keys_and_locks(lock, key):
+    #replace this for solution
+    return 0
+
+if __name__ == '__main__':
+    print("Example:")
+    print(keys_and_locks('''
+0##0
+0##0
+00#0
+00##
+00##''',
+'''
+00000
+000##
+#####
+##000
+00000'''))
+
+    #These "asserts" using only for self-checking and not necessary for auto-testing
+    assert keys_and_locks('''
+0##0
+0##0
+00#0
+00##
+00##''',
+'''
+00000
+000##
+#####
+##000
+00000''') == True
+    print("Coding complete? Click 'Check' to earn cool rewards!")

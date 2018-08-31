@@ -1,0 +1,38 @@
+"use strict";
+
+function keysAndLocks(lock, key) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(keysAndLocks(`
+0##0
+0##0
+00#0
+00##
+00##`,
+`
+00000
+000##
+#####
+##000
+00000`))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(keysAndLocks(`
+0##0
+0##0
+00#0
+00##
+00##`,
+`
+00000
+000##
+#####
+##000
+00000`), true)
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

@@ -1,0 +1,72 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}keys.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+Going up to the door you’ve noticed the case that was standing next to it - it was piled high with the keys of all shapes and sizes. Yes, Lord Escher definitely loved puzzles and difficulties. When you’ve attempted to open the door, you discovered with no particular surprise that it was closed. Well, let's find the right key and move on.
+</div>
+
+<p>
+As input you are getting two multi-line strings - one is a schematic image of the keyhole, the second - of the key. Your task is to return True if the key fits the lock and False if otherwise. The key and keyhole are represented by the '#' symbols, and '0' shows the empty space around the key and the door material around the keyhole. Pay attention that the key and keyhole can be displayed both vertically and horizontally.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> The key and lock representation as multilines string.
+</p>
+
+<p>
+    <strong>Output: </strong> True or False.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+keysAndLocks(`
+0##0
+0##0
+00#0
+00##
+00##`,
+`
+00000
+000##
+#####
+##000
+00000`) == true
+</pre>
+{% else %}
+<pre class="brush: python">
+keys_and_locks('''
+0##0
+0##0
+00#0
+00##
+00##''',
+'''
+00000
+000##
+#####
+##000
+00000''') == True
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    To determine the correspondence of objects to each other.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    size of key and lock <= 5x5
+</p>
