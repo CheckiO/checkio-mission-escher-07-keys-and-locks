@@ -1,0 +1,32 @@
+
+<body data-author="likewind">
+<div class="question-answer">
+    <div class="question">
+        How should I start solving this task?
+    </div>
+    <div class="answer">
+        For starters, you can use the algorithm used in the mission <a href='https://js.checkio.org/mission/ground-for-the-house/share/dad754484614a151008e955d559724b0/'>Ground for the house</a> to cut off the unnecessary rows and leave only the rectangle on which the important elements are located. In this mission, you’ll need to remove the redundant rows and columns both for lock and key.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+         What should I do next with the received arrays?
+    </div>
+    <div class="answer">
+Now you need to make sure that the key, in whatever position it is, doesn’t fit the lock. Or to find such position (if it exists), in which the key fits the lock exactly.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+         I'm not entirely clear how to do that. 
+    </div>
+    <div class="answer">
+You need to create 3 more copies of the array with the key - rotated by 90, 180 and 270 degrees respectively. And each of these copies, as well as the original key array, you have to compare to an array representing a lock.<br>
+If none of the 4 options is equivalent to a lock - you need to return False. Otherwise - return True.
+    </div>
+</div>
+
+</body>
+

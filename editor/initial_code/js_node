@@ -34,5 +34,29 @@ if (!global.is_checking) {
 #####
 ##000
 00000`), true)
+
+
+    assert.equal(keys_and_locks(`
+###0
+00#0`,
+`
+00000
+00000
+#0000
+###00
+0#000
+0#000`), false)
+
+    assert.equal(keys_and_locks(`
+0##0
+0#00
+0000`,
+`
+##000
+#0000
+00000
+00000
+00000`), true)
+
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
