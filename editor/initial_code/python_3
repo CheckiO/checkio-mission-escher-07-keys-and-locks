@@ -1,4 +1,4 @@
-def keys_and_locks(lock, key):
+def keys_and_locks(lock, some_key):
     #replace this for solution
     return 0
 

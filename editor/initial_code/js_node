@@ -1,6 +1,6 @@
 "use strict";
 
-function keysAndLocks(lock, key) {
+function keysAndLocks(lock, some_key) {
     // your code here
     return 0;
 }
