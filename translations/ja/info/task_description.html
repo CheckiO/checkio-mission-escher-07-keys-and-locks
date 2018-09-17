@@ -1,0 +1,83 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}keys.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+あなたはドアの前まで行くとそばに箱があるのに気が付きました。
+それには様々な形と大きさの鍵が山のように積まれていました。
+エッシャー卿がパズルや複雑さを愛していたのは明らかです。
+開けようとしたドアが閉まっていたとしても特に驚くようなことでもありません。
+さあ正しい鍵を探し出して先へ進みましょう。
+</div>
+
+<p>
+二つの複数行の文字列が入力値です。
+一つ目は鍵穴の図です。二つ目は鍵の図です。
+あなたの仕事は鍵が鍵穴に合えば True、合わなければ False を返すことです。
+鍵と鍵穴は '#' が表し、'0' は鍵の周囲の空間と鍵穴の周りの構造物を表します。
+鍵と鍵穴の図は任意の向きで与えられるので注意して下さい。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}key_rotation.jpg" style="max-height: 550px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> 鍵穴と鍵を表す複数行の文字列
+</p>
+
+<p>
+    <strong>出力: </strong> 真偽値 (True 又は False )
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+keysAndLocks(`
+0##0
+0##0
+00#0
+00##
+00##`,
+`
+00000
+000##
+#####
+##000
+00000`) == true
+</pre>
+{% else %}
+<pre class="brush: python">
+keys_and_locks('''
+0##0
+0##0
+00#0
+00##
+00##''',
+'''
+00000
+000##
+#####
+##000
+00000''') == True
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong> 二つの物の対応付けを決定できます。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    size of key and lock <= 10x10
+</p>
