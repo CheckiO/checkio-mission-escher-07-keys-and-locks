@@ -23,7 +23,8 @@ TESTS = {
 ##000
 00000''']
 ,
-            "answer": True
+            "answer": True,
+            "explanation": 90,
         },
         {
             "input": ['''
@@ -70,7 +71,8 @@ TESTS = {
 0####
 00000
 00000'''],
-            "answer": True
+            "answer": True,
+            "explanation": 90,
         },
         {
             "input": ['''
@@ -86,7 +88,8 @@ TESTS = {
 #####
 0#0#0
 00000'''],
-            "answer": True
+            "answer": True,
+            "explanation": 90,
         },
         {
             "input": ['''
@@ -114,7 +117,8 @@ TESTS = {
 00000
 00000
 00000'''],
-            "answer": True
+            "answer": True,
+            "explanation": 0,
         },
         {
             "input": ['''
@@ -129,7 +133,8 @@ TESTS = {
 0####
 000#0
 00000'''],
-            "answer": True
+            "answer": True,
+            "explanation": 90,
         },
         {
             "input": ['''
@@ -154,7 +159,8 @@ TESTS = {
 00###
 00000
 00000'''],
-            "answer": True
+            "answer": True,
+            "explanation": 0,
         },
         {
             "input": ['''
